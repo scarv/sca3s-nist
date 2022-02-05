@@ -1,0 +1,7 @@
+interface/crypto_aead.h
+candidate/Implementations/crypto_aead/photonbeetleaead128rate128v1/ref/api.h
+candidate/Implementations/crypto_aead/photonbeetleaead128rate128v1/ref/beetle.h
+candidate/Implementations/crypto_aead/photonbeetleaead128rate128v1/ref/encrypt.c
+candidate/Implementations/crypto_aead/photonbeetleaead128rate128v1/ref/photon.c
+candidate/Implementations/crypto_aead/photonbeetleaead128rate128v1/ref/photon.h
+
