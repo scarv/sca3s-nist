@@ -1,0 +1,10 @@
+interface/crypto_aead.h
+candidate/Implementations/crypto_aead/ascon128v12/ref/api.h  
+candidate/Implementations/crypto_aead/ascon128v12/ref/ascon.h  
+candidate/Implementations/crypto_aead/ascon128v12/ref/decrypt.c  
+candidate/Implementations/crypto_aead/ascon128v12/ref/encrypt.c  
+candidate/Implementations/crypto_aead/ascon128v12/ref/permutations.h  
+candidate/Implementations/crypto_aead/ascon128v12/ref/printstate.c  
+candidate/Implementations/crypto_aead/ascon128v12/ref/printstate.h  
+candidate/Implementations/crypto_aead/ascon128v12/ref/round.h  
+candidate/Implementations/crypto_aead/ascon128v12/ref/word.h
