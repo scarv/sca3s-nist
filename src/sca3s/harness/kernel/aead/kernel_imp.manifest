@@ -1,0 +1,9 @@
+interface/crypto_aead.h
+candidate/Implementations/crypto_aead/romulusn/ref/api.h
+candidate/Implementations/crypto_aead/romulusn/ref/decrypt.c
+candidate/Implementations/crypto_aead/romulusn/ref/encrypt.c
+candidate/Implementations/crypto_aead/romulusn/ref/romulus_n.h
+candidate/Implementations/crypto_aead/romulusn/ref/romulus_n_reference.c
+candidate/Implementations/crypto_aead/romulusn/ref/skinny.h
+candidate/Implementations/crypto_aead/romulusn/ref/skinny_reference.c
+candidate/Implementations/crypto_aead/romulusn/ref/variant.h
