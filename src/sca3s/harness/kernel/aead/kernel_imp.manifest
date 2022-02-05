@@ -1,0 +1,9 @@
+interface/crypto_aead.h
+candidate/Implementations/crypto_aead/isapa128v20/ref/Ascon-reference.c
+candidate/Implementations/crypto_aead/isapa128v20/ref/Ascon-reference.h
+candidate/Implementations/crypto_aead/isapa128v20/ref/api.h
+candidate/Implementations/crypto_aead/isapa128v20/ref/brg_endian.h
+candidate/Implementations/crypto_aead/isapa128v20/ref/crypto_aead.c
+candidate/Implementations/crypto_aead/isapa128v20/ref/isap.c
+candidate/Implementations/crypto_aead/isapa128v20/ref/isap.h
+
