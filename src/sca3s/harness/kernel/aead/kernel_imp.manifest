@@ -1,0 +1,7 @@
+interface/crypto_aead.h
+candidate/Implementations/crypto_aead/schwaemm256128v2/ref/api.h
+candidate/Implementations/crypto_aead/schwaemm256128v2/ref/encrypt.c
+candidate/Implementations/crypto_aead/schwaemm256128v2/ref/schwaemm_cfg.h
+candidate/Implementations/crypto_aead/schwaemm256128v2/ref/sparkle_ref.c
+candidate/Implementations/crypto_aead/schwaemm256128v2/ref/sparkle_ref.h
+
