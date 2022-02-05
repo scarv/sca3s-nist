@@ -1,0 +1,6 @@
+interface/crypto_aead.h
+candidate/Implementations/crypto_aead/elephant160v2/ref/api.h
+candidate/Implementations/crypto_aead/elephant160v2/ref/elephant_160.h
+candidate/Implementations/crypto_aead/elephant160v2/ref/encrypt.c
+candidate/Implementations/crypto_aead/elephant160v2/ref/implementors
+candidate/Implementations/crypto_aead/elephant160v2/ref/spongent.c
