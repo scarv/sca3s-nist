@@ -1,0 +1,13 @@
+interface/crypto_aead.h
+candidate/Implementations/crypto_aead/xoodyakround3/ref/Cyclist.h
+candidate/Implementations/crypto_aead/xoodyakround3/ref/Cyclist.inc
+candidate/Implementations/crypto_aead/xoodyakround3/ref/Xoodoo-SnP.h
+candidate/Implementations/crypto_aead/xoodyakround3/ref/Xoodoo-reference.c
+candidate/Implementations/crypto_aead/xoodyakround3/ref/Xoodoo.h
+candidate/Implementations/crypto_aead/xoodyakround3/ref/Xoodyak.c
+candidate/Implementations/crypto_aead/xoodyakround3/ref/Xoodyak.h
+candidate/Implementations/crypto_aead/xoodyakround3/ref/align.h
+candidate/Implementations/crypto_aead/xoodyakround3/ref/api.h
+candidate/Implementations/crypto_aead/xoodyakround3/ref/brg_endian.h
+candidate/Implementations/crypto_aead/xoodyakround3/ref/encrypt.c
+
