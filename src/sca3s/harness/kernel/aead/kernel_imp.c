@@ -79,7 +79,14 @@ kernel_fec_t kernel_prologue() {
   */
 
 kernel_fec_t kernel() {
-  return KERNEL_FEC_SUCCESS;
+  unsigned long long n_t;
+
+  if( ( 0 != crypto_aead_encrypt( c, &n_t, m, n_m, a, n_a, NULL, n, k ) ) || ( n_t > UCHAR_MAX ) ) {
+    n_c =   0; return KERNEL_FEC_FAILURE;
+  }
+  else {
+    n_c = n_t; return KERNEL_FEC_SUCCESS;
+  }
 }
 
 /** @brief      Execute the kernel epilogue,

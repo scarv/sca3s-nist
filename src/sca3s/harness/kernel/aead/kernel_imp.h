@@ -8,6 +8,9 @@
 #ifndef __KERNEL_IMP_H
 #define __KERNEL_IMP_H
 
+#include "api.h"
+#include "crypto_aead.h"
+
 // ============================================================================
 
 /** @brief      The kernel name, e.g., 
@@ -27,7 +30,7 @@
   */
 
 #if !defined( KERNEL_MODEOF     )
-#define KERNEL_MODEOF     KERNEL_MODEOF_DEFAULT
+#define KERNEL_MODEOF     KERNEL_MODEOF_ENC
 #endif
 
 // ----------------------------------------------------------------------------
@@ -36,42 +39,42 @@
   */
 
 #if !defined( KERNEL_SIZEOF_ESR )
-#define KERNEL_SIZEOF_ESR  0
+#define KERNEL_SIZEOF_ESR 0
 #endif
 
 /** @brief      Number of allocated bytes in the register    that contains the cipher key.
   */
 
 #if !defined( KERNEL_SIZEOF_K   )
-#define KERNEL_SIZEOF_K   16
+#define KERNEL_SIZEOF_K   CRYPTO_KEYBYTES
 #endif
 
 /** @brief      Number of allocated bytes in the register    that contains the nonce.
   */
 
 #if !defined( KERNEL_SIZEOF_N   )
-#define KERNEL_SIZEOF_N   16
+#define KERNEL_SIZEOF_N   CRYPTO_NSECBYTES + CRYPTO_NPUBBYTES
 #endif
 
 /** @brief      Number of allocated bytes in the register    that contains the associated data.
   */
 
 #if !defined( KERNEL_SIZEOF_A   )
-#define KERNEL_SIZEOF_A   16
+#define KERNEL_SIZEOF_A   128
 #endif
 
 /** @brief      Number of allocated bytes in the register    that contains the  plaintext data.
   */
 
 #if !defined( KERNEL_SIZEOF_M   )
-#define KERNEL_SIZEOF_M   16
+#define KERNEL_SIZEOF_M   128
 #endif
 
 /** @brief      Number of allocated bytes in the register    that contains the ciphertext data.
   */
 
 #if !defined( KERNEL_SIZEOF_C   )
-#define KERNEL_SIZEOF_C   16
+#define KERNEL_SIZEOF_C   KERNEL_SIZEOF_M + CRYPTO_ABYTES
 #endif
 
 // ============================================================================
