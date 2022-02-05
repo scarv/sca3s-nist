@@ -1,0 +1,5 @@
+interface/crypto_aead.h
+candidate/Implementations/crypto_aead/giftcofb128v1/ref/api.h
+candidate/Implementations/crypto_aead/giftcofb128v1/ref/encrypt.c
+candidate/Implementations/crypto_aead/giftcofb128v1/ref/gift128.c
+candidate/Implementations/crypto_aead/giftcofb128v1/ref/gift128.h
