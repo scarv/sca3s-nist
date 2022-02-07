@@ -8,6 +8,8 @@
 #ifndef __KERNEL_IMP_H
 #define __KERNEL_IMP_H
 
+#include "api.h"
+
 // ============================================================================
 
 /** @brief      The kernel name, e.g., 

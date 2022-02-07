@@ -12,6 +12,11 @@
 
 // ============================================================================
 
+   keyInstance    key_state;
+cipherInstance cipher_state;
+
+// ----------------------------------------------------------------------------
+
 /** @brief      Execute the kernel prologue,
   *             e.g., any  pre-execution steps such as   allocation of memory.
   *
@@ -26,6 +31,21 @@
   */
 
 kernel_fec_t kernel_prologue() {
+  char t[ 2 * KERNEL_SIZEOF_K ];
+
+  for( int i = 0; i < KERNEL_SIZEOF_K; i++ ) {
+    t[ 2 * i + 0 ] = itox( ( k[ i ] >> 0 ) & 0xF );
+    t[ 2 * i + 1 ] = itox( ( k[ i ] >> 4 ) & 0xF );
+  }
+
+  if( 0 >= makeKey( &key_state, DIR_ENCRYPT, 8 * KERNEL_SIZEOF_K, t ) ) {
+    return KERNEL_FEC_FAILURE;
+  }
+
+  if( 0 >= cipherInit( &cipher_state, MODE_ECB, NULL ) ) {
+    return KERNEL_FEC_FAILURE;
+  }
+
   return KERNEL_FEC_SUCCESS;
 }
 
@@ -58,7 +78,12 @@ kernel_fec_t kernel_prologue() {
   */
 
 kernel_fec_t kernel() {
-  return KERNEL_FEC_SUCCESS;
+  if( 0 >= blockEncrypt( &cipher_state, &key_state, m, 8 * KERNEL_SIZEOF_M, c ) ) {
+    return KERNEL_FEC_FAILURE;
+  }
+  else {
+    return KERNEL_FEC_SUCCESS;
+  }
 }
 
 /** @brief      Execute the kernel epilogue,
