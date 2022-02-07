@@ -31,12 +31,14 @@ cipherInstance cipher_state;
   */
 
 kernel_fec_t kernel_prologue() {
-  char t[ 2 * KERNEL_SIZEOF_K ];
+  char t[ 2 * KERNEL_SIZEOF_K + 1 ];
 
   for( int i = 0; i < KERNEL_SIZEOF_K; i++ ) {
     t[ 2 * i + 0 ] = itox( ( k[ i ] >> 0 ) & 0xF );
     t[ 2 * i + 1 ] = itox( ( k[ i ] >> 4 ) & 0xF );
   }
+
+  t[ 2 * KERNEL_SIZEOF_K ] = '\x00';
 
   if( 0 >= makeKey( &key_state, DIR_ENCRYPT, 8 * KERNEL_SIZEOF_K, t ) ) {
     return KERNEL_FEC_FAILURE;
