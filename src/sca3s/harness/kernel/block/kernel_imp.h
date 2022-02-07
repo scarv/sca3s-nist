@@ -8,7 +8,7 @@
 #ifndef __KERNEL_IMP_H
 #define __KERNEL_IMP_H
 
-#include "api.h"
+#include "rijndael-api-ref.h"
 
 // ============================================================================
 

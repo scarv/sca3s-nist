@@ -38,6 +38,9 @@ kernel_fec_t kernel_prologue() {
     t[ 2 * i + 1 ] = itox( ( k[ i ] >> 4 ) & 0xF );
   }
 
+     key_state.blockLen = 8 * KERNEL_SIZEOF_K;
+  cipher_state.blockLen = 8 * KERNEL_SIZEOF_M;
+
   if( 0 >= makeKey( &key_state, DIR_ENCRYPT, 8 * KERNEL_SIZEOF_K, t ) ) {
     return KERNEL_FEC_FAILURE;
   }
