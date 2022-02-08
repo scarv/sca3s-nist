@@ -1,0 +1,11 @@
+interface/crypto_hash.h
+candidate/Implementations/crypto_hash/xoodyakround3/ref/Cyclist.h
+candidate/Implementations/crypto_hash/xoodyakround3/ref/Xoodoo-SnP.h
+candidate/Implementations/crypto_hash/xoodyakround3/ref/Xoodoo-reference.c
+candidate/Implementations/crypto_hash/xoodyakround3/ref/Xoodoo.h
+candidate/Implementations/crypto_hash/xoodyakround3/ref/Xoodyak.c
+candidate/Implementations/crypto_hash/xoodyakround3/ref/Xoodyak.h
+candidate/Implementations/crypto_hash/xoodyakround3/ref/align.h
+candidate/Implementations/crypto_hash/xoodyakround3/ref/api.h
+candidate/Implementations/crypto_hash/xoodyakround3/ref/brg_endian.h
+candidate/Implementations/crypto_hash/xoodyakround3/ref/hash.c
