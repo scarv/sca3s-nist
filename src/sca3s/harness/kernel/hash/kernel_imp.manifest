@@ -1,0 +1,7 @@
+interface/crypto_hash.h
+candidate/Implementations/crypto_hash/asconhashv12/ref/api.h
+candidate/Implementations/crypto_hash/asconhashv12/ref/ascon.h
+candidate/Implementations/crypto_hash/asconhashv12/ref/hash.c
+candidate/Implementations/crypto_hash/asconhashv12/ref/permutations.h
+candidate/Implementations/crypto_hash/asconhashv12/ref/round.h
+candidate/Implementations/crypto_hash/asconhashv12/ref/word.h
