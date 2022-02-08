@@ -1,0 +1,6 @@
+interface/crypto_hash.h
+candidate/Implementations/crypto_hash/esch256v2/ref/api.h
+candidate/Implementations/crypto_hash/esch256v2/ref/esch_cfg.h
+candidate/Implementations/crypto_hash/esch256v2/ref/hash.c
+candidate/Implementations/crypto_hash/esch256v2/ref/sparkle_ref.c
+candidate/Implementations/crypto_hash/esch256v2/ref/sparkle_ref.h
