@@ -60,7 +60,12 @@ kernel_fec_t kernel_prologue() {
   */
 
 kernel_fec_t kernel() {
-  return KERNEL_FEC_SUCCESS;
+  if( 0 != crypto_hash( d, m, n_m ) ) {
+    return KERNEL_FEC_FAILURE;
+  }
+  else {
+    return KERNEL_FEC_SUCCESS;
+  }
 }
 
 /** @brief      Execute the kernel epilogue,

@@ -8,6 +8,9 @@
 #ifndef __KERNEL_IMP_H
 #define __KERNEL_IMP_H
 
+#include "api.h"
+#include "crypto_hash.h"
+
 // ============================================================================
 
 /** @brief      The kernel name, e.g.,
@@ -39,21 +42,21 @@
   */
 
 #if !defined( KERNEL_SIZEOF_ESR )
-#define KERNEL_SIZEOF_ESR  0
+#define KERNEL_SIZEOF_ESR 0
 #endif
 
 /** @brief      Number of allocated bytes in the register    that contains the message.
   */
 
 #if !defined( KERNEL_SIZEOF_M   )
-#define KERNEL_SIZEOF_M    4
+#define KERNEL_SIZEOF_M   128
 #endif
 
 /** @brief      Number of allocated bytes in the register    that contains the  digest.
   */
 
 #if !defined( KERNEL_SIZEOF_D   )
-#define KERNEL_SIZEOF_D    4
+#define KERNEL_SIZEOF_D   CRYPTO_BYTES 
 #endif
 
 // ============================================================================
